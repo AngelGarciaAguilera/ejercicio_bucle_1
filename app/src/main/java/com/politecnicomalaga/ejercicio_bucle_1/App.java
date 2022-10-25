@@ -9,17 +9,25 @@ public class App {
 
     public static void main(String[] args) {
         
+        int num;
+        //int mult;
+        int i;
+        int multiplos;
+        
         Scanner miScan = new Scanner(System.in);
         
+        System.out.println("ESTE PROGRAMA MUESTRA LOS 10 PRIMEROS MÚLTIPLOS DEL NÚMERO QUE INTRODUZCAS");
         System.out.println("Introduzca un número: ");
-        int num = miScan.nextInt();
+        num = miScan.nextInt();
         
-        for(int i = 0;i < 10;i++){
+        /*System.out.println("Introduzca el número de múltiplos que desee: ");
+        mult = miScan.nextInt();*/
+        
+        for(i = 0;i < 10 /*mult*/;i++){
             
-            int multiplos = num * i;
+            multiplos = num * i;
             System.out.println("El " + (i + 1) + "º múltiplo del número introducido es: " + multiplos);
-
-        }
-        
+            
+        }   
     }
 }
